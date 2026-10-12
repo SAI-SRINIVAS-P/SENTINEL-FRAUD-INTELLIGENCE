@@ -1,135 +1,145 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
-<title id="title">Sentinel Fraud Intelligence | Animated Risk Signal Interface</title>
-<desc id="desc">A centered neon Sentinel Fraud Intelligence wordmark surrounded by animated transaction data streams, a radar sweep, network pulses, and risk telemetry motifs.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<title id="title">SENTINEL FRAUD INTELLIGENCE</title>
+<desc id="desc">A vivid, centered cyber-intelligence title with a sweeping radar beam, animated data packets, scanning brackets, risk pulses, and a live signal waveform.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#06131f"/>
-    <stop offset=".53" stop-color="#0a1a2a"/>
-    <stop offset="1" stop-color="#14172e"/>
+    <stop offset="0" stop-color="#030b16"/><stop offset=".5" stop-color="#07182a"/><stop offset="1" stop-color="#10132b"/>
   </linearGradient>
-  <linearGradient id="type" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#c0ffed">
-      <animate attributeName="stop-color" values="#c0ffed;#69e6dd;#b9b6ff;#c0ffed" dur="7s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset=".48" stop-color="#62e2df">
-      <animate attributeName="stop-color" values="#62e2df;#b4ffec;#a0a2ff;#62e2df" dur="7s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset="1" stop-color="#d1c6ff">
-      <animate attributeName="stop-color" values="#d1c6ff;#8de7e5;#c5ffe9;#d1c6ff" dur="7s" repeatCount="indefinite"/>
-    </stop>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#d2fff4"><animate attributeName="stop-color" values="#d2fff4;#6fffea;#a8a5ff;#d2fff4" dur="5s" repeatCount="indefinite"/></stop>
+    <stop offset=".48" stop-color="#54f5e1"><animate attributeName="stop-color" values="#54f5e1;#b4fff4;#8e9cff;#54f5e1" dur="5s" repeatCount="indefinite"/></stop>
+    <stop offset="1" stop-color="#c4baff"><animate attributeName="stop-color" values="#c4baff;#80fff0;#e0caff;#c4baff" dur="5s" repeatCount="indefinite"/></stop>
   </linearGradient>
-  <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#6ce9dc" stop-opacity="0"/>
-    <stop offset=".5" stop-color="#6ce9dc" stop-opacity=".95"/>
-    <stop offset="1" stop-color="#a79cff" stop-opacity="0"/>
+  <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#39f6de" stop-opacity="0"/>
+    <stop offset="1" stop-color="#39f6de" stop-opacity=".26"/>
   </linearGradient>
-  <radialGradient id="coreGlow">
-    <stop offset="0" stop-color="#187b7a" stop-opacity=".3"/>
-    <stop offset="1" stop-color="#187b7a" stop-opacity="0"/>
+  <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#56ffe8" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#56ffe8"/>
+    <stop offset="1" stop-color="#a7a0ff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="centerGlow">
+    <stop offset="0" stop-color="#0a7c82" stop-opacity=".28"/><stop offset="1" stop-color="#0a7c82" stop-opacity="0"/>
   </radialGradient>
-  <filter id="softGlow" x="-30%" y="-100%" width="160%" height="300%">
-    <feGaussianBlur stdDeviation="4"/>
+  <filter id="glow" x="-30%" y="-100%" width="160%" height="300%">
+    <feGaussianBlur stdDeviation="6"/>
   </filter>
-  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-    <path d="M30 0H0V30" fill="none" stroke="#4b7180" stroke-width=".6" opacity=".24"/>
+  <filter id="smallGlow" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="2.5"/>
+  </filter>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#2d6174" stroke-width=".6" opacity=".34"/>
   </pattern>
 </defs>
 
-<!-- Dark observability canvas -->
-<rect width="1200" height="260" rx="24" fill="url(#bg)"/>
-<rect x="1" y="1" width="1198" height="258" rx="23" fill="url(#grid)" opacity=".72"/>
-<ellipse cx="600" cy="120" rx="485" ry="160" fill="url(#coreGlow)"/>
-<path d="M34 38H1166M34 222H1166" fill="none" stroke="#254552" stroke-width="1"/>
-<path d="M34 38H236M964 222H1166" fill="none" stroke="#5fe6db" stroke-width="2" opacity=".8"/>
-<circle cx="34" cy="38" r="3" fill="#76f3df"><animate attributeName="opacity" values=".3;1;.3" dur="2.3s" repeatCount="indefinite"/></circle>
-<circle cx="1166" cy="222" r="3" fill="#bcb1ff"><animate attributeName="opacity" values="1;.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+<!-- High contrast command-screen background -->
+<rect width="1200" height="280" rx="24" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="278" rx="23" fill="url(#grid)" opacity=".7"/>
+<ellipse cx="600" cy="126" rx="520" ry="190" fill="url(#centerGlow)"/>
+<path d="M24 34H1176M24 246H1176" stroke="#254957" stroke-width="1"/>
+<path d="M24 34H260M940 246H1176" stroke="#5bffe8" stroke-width="2.5" opacity=".9"/>
+<path d="M24 34V66M1176 214V246" stroke="#5bffe8" stroke-width="2.5"/>
+<g fill="#65ffeb">
+  <circle cx="24" cy="34" r="4"><animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite"/></circle>
+  <circle cx="1176" cy="246" r="4"><animate attributeName="r" values="4;2;4" dur="1.7s" repeatCount="indefinite"/></circle>
+</g>
 
-<!-- Moving transaction traces -->
+<!-- Fast-moving data packets along the perimeter -->
 <g fill="none" stroke-linecap="round">
-  <path d="M58 77H258L278 97H320" stroke="#254f5a" stroke-width="1.5"/>
-  <path d="M880 166H922L944 144H1142" stroke="#254f5a" stroke-width="1.5"/>
-  <path d="M58 77H258L278 97H320" stroke="url(#trace)" stroke-width="2" stroke-dasharray="68 420">
-    <animate attributeName="stroke-dashoffset" values="488;0;-488" dur="5s" repeatCount="indefinite"/>
+  <path d="M54 74H260L280 94H360M840 188H920L942 166H1145" stroke="#24515f" stroke-width="2"/>
+  <path d="M54 74H260L280 94H360" stroke="url(#scan)" stroke-width="3" stroke-dasharray="72 390">
+    <animate attributeName="stroke-dashoffset" values="462;0;-462" dur="2.6s" repeatCount="indefinite"/>
   </path>
-  <path d="M880 166H922L944 144H1142" stroke="url(#trace)" stroke-width="2" stroke-dasharray="75 420">
-    <animate attributeName="stroke-dashoffset" values="495;0;-495" dur="5.8s" repeatCount="indefinite"/>
+  <path d="M840 188H920L942 166H1145" stroke="url(#scan)" stroke-width="3" stroke-dasharray="80 390">
+    <animate attributeName="stroke-dashoffset" values="470;0;-470" dur="3s" repeatCount="indefinite"/>
   </path>
-  <path d="M95 193H208M992 73H1105" stroke="#294d5a" stroke-width="1" stroke-dasharray="3 6"/>
 </g>
-<g fill="#7af0e0">
-  <circle cx="258" cy="77" r="3"><animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/></circle>
-  <circle cx="944" cy="144" r="3"><animate attributeName="r" values="3;5;3" dur="2.6s" repeatCount="indefinite"/></circle>
-  <circle cx="208" cy="193" r="2"><animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/></circle>
-  <circle cx="992" cy="73" r="2"><animate attributeName="opacity" values="1;.25;1" dur="3s" repeatCount="indefinite"/></circle>
+<g fill="#72ffed" filter="url(#smallGlow)">
+  <circle cx="54" cy="74" r="3"><animate attributeName="cx" values="54;360;54" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="1145" cy="166" r="3"><animate attributeName="cx" values="1145;840;1145" dur="3.4s" repeatCount="indefinite"/></circle>
 </g>
 
-<!-- Central signal radar behind the wordmark -->
-<g transform="translate(600 119)" fill="none">
-  <circle r="102" stroke="#3b7c81" stroke-width="1" stroke-opacity=".12"/>
-  <circle r="84" stroke="#55c9c7" stroke-width="1" stroke-opacity=".17" stroke-dasharray="2 9">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="46s" repeatCount="indefinite"/>
+<!-- Radar sweep, layered behind the title -->
+<g transform="translate(600 126)">
+  <circle r="116" fill="none" stroke="#3b9ca6" stroke-opacity=".18"/>
+  <circle r="91" fill="none" stroke="#44d9d3" stroke-opacity=".22" stroke-dasharray="3 8">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
   </circle>
-  <circle r="62" stroke="#6ce8db" stroke-opacity=".12">
-    <animate attributeName="r" values="56;70;56" dur="4.8s" repeatCount="indefinite"/>
-    <animate attributeName="stroke-opacity" values=".08;.27;.08" dur="4.8s" repeatCount="indefinite"/>
+  <circle r="68" fill="none" stroke="#56f8e4" stroke-opacity=".2">
+    <animate attributeName="r" values="58;76;58" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".08;.42;.08" dur="3s" repeatCount="indefinite"/>
   </circle>
-  <path d="M-116 0H116M0 -116V116" stroke="#4c818b" stroke-opacity=".16" stroke-dasharray="2 7"/>
-  <path d="M0 0L0 -78A78 78 0 0 1 53 -57Z" fill="#6be2db" fill-opacity=".055" stroke="none">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+  <path d="M0 0L0 -108A108 108 0 0 1 76 -76Z" fill="url(#beam)">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.2s" repeatCount="indefinite"/>
   </path>
-  <circle r="4" fill="#baffed" stroke="none">
-    <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+  <circle r="5" fill="#c9fff4">
+    <animate attributeName="r" values="3;7;3" dur="1.5s" repeatCount="indefinite"/>
   </circle>
   <g>
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
-    <circle cx="84" cy="0" r="4" fill="#c7beff" stroke="none"/>
-    <circle cx="-84" cy="0" r="3" fill="#6ce8db" stroke="none"/>
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
+    <circle cx="91" cy="0" r="4.5" fill="#d0c5ff"/>
+    <circle cx="-91" cy="0" r="3.5" fill="#5dffea"/>
   </g>
 </g>
 
-<!-- Corner telemetry widgets: risk profile and network graph -->
-<g transform="translate(82 104)" stroke="#477e8a" fill="none" stroke-width="1.2" opacity=".85">
-  <path d="M0 0L17 -12L32 0L47 -19L64 -8"/>
-  <path d="M0 19L19 10L36 21L52 6L66 14" opacity=".65"/>
-  <circle cx="0" cy="0" r="3" fill="#72eddd" stroke="none"/>
-  <circle cx="17" cy="-12" r="2.5" fill="#72eddd" stroke="none"/>
-  <circle cx="32" cy="0" r="3" fill="#c7beff" stroke="none"/>
-  <circle cx="47" cy="-19" r="2.5" fill="#72eddd" stroke="none"/>
-  <circle cx="64" cy="-8" r="3" fill="#c7beff" stroke="none"/>
-  <circle cx="36" cy="21" r="2.5" fill="#72eddd" stroke="none"/>
+<!-- Animated corner data visualizations -->
+<g transform="translate(72 118)" fill="none" stroke="#4b9ba5" stroke-width="1.5">
+  <path d="M0 0L18 -13L35 3L53 -22L72 -7L88 -18"/>
+  <path d="M0 24L19 12L36 26L54 10L73 19L90 4" opacity=".55"/>
+  <g fill="#62ffea" stroke="none">
+    <circle cx="0" cy="0" r="3"><animate attributeName="r" values="2;4;2" dur="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="35" cy="3" r="3"><animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/></circle>
+    <circle cx="72" cy="-7" r="3"><animate attributeName="r" values="2;4;2" dur="1.6s" repeatCount="indefinite"/></circle>
+  </g>
 </g>
-<g transform="translate(1050 103)" stroke="#4c8590" fill="none">
-  <path d="M0 30V14H12V30M18 30V5H30V30M36 30V-5H48V30M54 30V-17H66V30" stroke-width="5" stroke-opacity=".22"/>
-  <path d="M0 30V14H12V30M18 30V5H30V30M36 30V-5H48V30M54 30V-17H66V30" stroke="#67e4dc" stroke-width="1.5" stroke-dasharray="20 60">
-    <animate attributeName="stroke-dashoffset" values="80;0;-80" dur="4s" repeatCount="indefinite"/>
-  </path>
-  <path d="M-4 -24H74" stroke="#2e5360" stroke-dasharray="2 5"/>
+<g transform="translate(1038 108)">
+  <g fill="#3f7b8a" opacity=".55">
+    <rect x="0" y="27" width="10" height="24" rx="2"/><rect x="16" y="14" width="10" height="37" rx="2"/><rect x="32" y="2" width="10" height="49" rx="2"/><rect x="48" y="19" width="10" height="32" rx="2"/><rect x="64" y="-8" width="10" height="59" rx="2"/>
+  </g>
+  <g fill="#6affea" filter="url(#smallGlow)">
+    <rect x="0" y="27" width="10" height="24" rx="2"><animate attributeName="opacity" values=".25;1;.25" dur="1.5s" repeatCount="indefinite"/></rect>
+    <rect x="16" y="14" width="10" height="37" rx="2"><animate attributeName="opacity" values="1;.25;1" dur="1.9s" repeatCount="indefinite"/></rect>
+    <rect x="32" y="2" width="10" height="49" rx="2"><animate attributeName="opacity" values=".25;1;.25" dur="1.7s" repeatCount="indefinite"/></rect>
+    <rect x="48" y="19" width="10" height="32" rx="2"><animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/></rect>
+    <rect x="64" y="-8" width="10" height="59" rx="2"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></rect>
+  </g>
 </g>
 
-<!-- Main title: centered and visually dominant -->
-<text x="600" y="118" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="900" letter-spacing="2" fill="#60e7dc" opacity=".48" filter="url(#softGlow)">SENTINEL FRAUD INTELLIGENCE</text>
-<text x="600" y="118" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="900" letter-spacing="2" fill="url(#type)">SENTINEL FRAUD INTELLIGENCE
-  <animate attributeName="opacity" values=".9;1;.9" dur="3.8s" repeatCount="indefinite"/>
+<!-- Scan brackets frame the centered wordmark -->
+<g fill="none" stroke="#6affeb" stroke-width="2.5" stroke-linecap="round">
+  <path d="M190 91V79H222M978 79H1010V91M190 151V163H222M978 163H1010V151" opacity=".8"/>
+  <path d="M205 79H222M978 79H995M205 163H222M978 163H995" stroke-width="1" opacity=".6"/>
+</g>
+<path d="M228 78H972" stroke="#3b737f" stroke-width="1" stroke-dasharray="2 8" opacity=".8"/>
+
+<!-- Bold central title with a brighter animated glow -->
+<text x="600" y="129" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="900" letter-spacing="1.7" fill="#50ffe7" opacity=".78" filter="url(#glow)">SENTINEL FRAUD INTELLIGENCE</text>
+<text x="600" y="129" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="900" letter-spacing="1.7" fill="url(#neon)">SENTINEL FRAUD INTELLIGENCE
+  <animate attributeName="opacity" values=".94;1;.94" dur="2.8s" repeatCount="indefinite"/>
 </text>
-
-<!-- Risk waveform / scanner underline -->
-<path d="M246 151H954" stroke="#315764" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M246 151H954" stroke="#6ce8dc" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="100 610" stroke-dashoffset="710">
-  <animate attributeName="stroke-dashoffset" values="710;0;-710" dur="5s" repeatCount="indefinite"/>
+<path d="M244 174H956" stroke="#285361" stroke-width="2"/>
+<path d="M244 174H956" stroke="url(#scan)" stroke-width="4" stroke-linecap="round" stroke-dasharray="150 560" stroke-dashoffset="710">
+  <animate attributeName="stroke-dashoffset" values="710;0;-710" dur="3.4s" repeatCount="indefinite"/>
 </path>
-<path d="M410 174L430 174L440 165L450 184L462 169L473 174H505M695 174H727L739 165L751 183L764 169L776 174H790" fill="none" stroke="#4fa9b1" stroke-width="1.2" opacity=".42"/>
-<g fill="#72e9dd">
-  <circle cx="246" cy="151" r="3"><animate attributeName="opacity" values=".3;1;.3" dur="2.1s" repeatCount="indefinite"/></circle>
-  <circle cx="954" cy="151" r="3"><animate attributeName="opacity" values="1;.3;1" dur="2.7s" repeatCount="indefinite"/></circle>
-</g>
 
-<!-- Status lights around the frame -->
-<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="9" letter-spacing="2" fill="#709ba7">
-  <text x="56" y="57">SIGNAL MONITOR</text>
-  <text x="1144" y="57" text-anchor="end">RISK INTELLIGENCE</text>
-  <text x="56" y="211">TX STREAM</text>
-  <text x="1144" y="211" text-anchor="end">MODEL ACTIVE</text>
+<!-- Animated risk waveform -->
+<path d="M410 196H444L455 185L466 207L478 188L489 196H525M675 196H711L722 185L733 207L745 188L756 196H790" fill="none" stroke="#48c7c8" stroke-width="1.5" opacity=".8"/>
+<path d="M410 196H444L455 185L466 207L478 188L489 196H525M675 196H711L722 185L733 207L745 188L756 196H790" fill="none" stroke="#a6a0ff" stroke-width="1.5" stroke-dasharray="20 260" stroke-dashoffset="280">
+  <animate attributeName="stroke-dashoffset" values="280;0;-280" dur="2.2s" repeatCount="indefinite"/>
+</path>
+
+<!-- Readable system labels and status pulses -->
+<g font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10" font-weight="600" letter-spacing="2" fill="#82b5c0">
+  <text x="52" y="58">FRAUD SIGNAL / LIVE</text>
+  <text x="1148" y="58" text-anchor="end">RISK ENGINE / ACTIVE</text>
+  <text x="52" y="230">TX STREAM <tspan fill="#66ffe9">●</tspan></text>
+  <text x="1148" y="230" text-anchor="end">MODEL WATCH <tspan fill="#c6baff">●</tspan></text>
 </g>
-<circle cx="182" cy="54" r="2.5" fill="#75f0dd"><animate attributeName="opacity" values=".2;1;.2" dur="1.8s" repeatCount="indefinite"/></circle>
-<circle cx="1015" cy="54" r="2.5" fill="#c0b7ff"><animate attributeName="opacity" values="1;.2;1" dur="2.2s" repeatCount="indefinite"/></circle>
+<circle cx="190" cy="54" r="3" fill="#65ffeb"><animate attributeName="opacity" values=".15;1;.15" dur="1.2s" repeatCount="indefinite"/></circle>
+<circle cx="1007" cy="54" r="3" fill="#c7baff"><animate attributeName="opacity" values="1;.15;1" dur="1.5s" repeatCount="indefinite"/></circle>
+<path d="M360 245H840" stroke="#254653" stroke-width="1"/>
+<path d="M360 245H840" stroke="url(#scan)" stroke-width="1.5" stroke-dasharray="60 420" stroke-dashoffset="480">
+  <animate attributeName="stroke-dashoffset" values="480;0;-480" dur="4.5s" repeatCount="indefinite"/>
+</path>
 </svg>
