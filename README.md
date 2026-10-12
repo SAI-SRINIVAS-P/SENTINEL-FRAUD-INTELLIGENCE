@@ -1,4 +1,4 @@
-![Animated Sentinel Fraud Intelligence title](docs/sentinel-title-animation.svg)
+![Sentinel Risk Signal Engine animated title](docs/sentinel-signal-engine-title.svg)
 
 # SENTINEL / FRAUD INTELLIGENCE
 ### A risk observatory for transaction signals, model decisions, and analyst review
@@ -32,61 +32,29 @@ Sentinel is a full-stack fraud-risk prototype built around a clear operational l
 | User interface | Responsive React + TypeScript console, anchored section navigation, and browser Back/Forward support |
 | Engineering | Docker Compose, SQL Server persistence, xUnit tests, and GitHub Actions CI |
 
-## Visual tour
+## Website slideshow
 
-The animated slideshow below cycles through six Sentinel website pages, following the workflow shown in the attached project recording: sign-in, overview, live scoring, analyst review, model evaluation, and monitoring. It is a purpose-built visual recreation of those page types, not a set of extracted video frames or live application screenshots. GitHub README does not support a native interactive carousel, so this locally stored SVG advances through the slides automatically.
+The **Sentinel Screen Atlas** below is a locally hosted, automatically cycling six-frame SVG slideshow. It follows the website workflow documented for this project: sign-in, operations overview, live scoring, analyst review, model evaluation, and model health. The artwork is a custom UI reconstruction, not screenshots extracted from the reference recording. Example metrics and transaction IDs are illustrative, not live results.
 
-![Sentinel website page slideshow showing sign-in, overview, live scoring, review queue, evaluation, and model health](docs/sentinel-page-slideshow.svg)
-
-Use the expandable page notes below to jump to a specific screen's description.
+<p align="center">
+  <img src="docs/sentinel-screen-atlas.svg" width="100%" alt="Animated six-page Sentinel website slideshow: access gateway, overview dashboard, live scoring, analyst review queue, evaluation lab, and model health"/>
+</p>
 
 <details>
-<summary><strong>Slide 01 · Sign-in / access gateway</strong></summary>
+<summary><strong>Slide index · Open a page description</strong></summary>
 
-The sign-in page introduces the Risk Observatory visual language and provides the entry point for authenticated analyst and administrator workflows.
-
-![Sentinel Observatory interface background](web/public/sentinel-observatory.svg)
+| Frame | Page | Main purpose |
+|---|---|---|
+| 01 | Access gateway | Sign-in for analyst and administrator workflows |
+| 02 | Operations overview | Scoring activity, flagged cases, pending reviews, and active model |
+| 03 | Live scoring | Submit transaction features and inspect the score response |
+| 04 | Analyst review | Inspect flagged cases and record review decisions |
+| 05 | Evaluation Lab | Review PR-AUC, precision, recall, F1, threshold trade-offs, and confusion matrix |
+| 06 | Model health | Inspect registry status, activity signals, and feature-shift screening |
 
 </details>
 
-<details>
-<summary><strong>Slide 02 · Overview / risk telemetry</strong></summary>
-
-The overview brings transaction volume, flagged activity, review backlog, model status, and recent risk signals into one workspace.
-
-![Sentinel risk atlas background](web/public/risk-atlas.svg)
-
-</details>
-
-<details>
-<summary><strong>Slide 03 · Live scoring</strong></summary>
-
-Submit a transaction's amount, time feature, and 28 anonymized PCA values. The response displays a risk probability, threshold decision, and top single-feature sensitivity signals. Sensitivities are not causal explanations.
-
-</details>
-
-<details>
-<summary><strong>Slide 04 · Analyst review queue</strong></summary>
-
-Inspect flagged transactions, open a case, and record a review decision with a note. Reviewer decisions are feedback, not independently verified ground truth.
-
-</details>
-
-<details>
-<summary><strong>Slide 05 · Model registry and evaluation</strong></summary>
-
-Inspect model versions and held-out evaluation metrics, retrain from the configured dataset, and adjust the live decision threshold. Administrative actions require an administrator account.
-
-</details>
-
-<details>
-<summary><strong>Slide 06 · Audit trail and monitoring</strong></summary>
-
-Review recent analyst decisions and monitor scoring activity, risk distribution, review throughput, and simple feature-mean shift indicators.
-
-</details>
-
-> **Screenshot note:** the recording was supplied as a conversation attachment and is not itself hosted in this GitHub repository. The visual tour uses the repository's real UI background assets and screen descriptions rather than pretending those assets are screenshots. Add captured PNGs under `docs/screenshots/` if you want the README to show exact recorded screens.
+The title animation and slideshow are original SVG assets created for this repository. SVG animation support can vary between GitHub's file preview, README renderer, and third-party clients; if a viewer shows a static frame, the content remains readable as a still illustration. The reference recording itself was not available as a directly inspectable video file in this editing step, so the slideshow should be treated as a tailored reconstruction of the documented page flow rather than an exact frame-by-frame capture.
 
 ## Technology stack
 
