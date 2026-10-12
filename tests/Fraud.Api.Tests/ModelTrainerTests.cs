@@ -1,6 +1,7 @@
 using System.Text.Json;
 using Fraud.Api.Models;
 using Fraud.Api.Services;
+using Xunit;
 
 namespace Fraud.Api.Tests;
 
