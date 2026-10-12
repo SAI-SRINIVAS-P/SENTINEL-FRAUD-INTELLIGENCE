@@ -1,42 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
-  <title id="title">SENTINEL / FRAUD INTELLIGENCE</title>
-  <desc id="desc">Animated radar sweep and glowing title for the Sentinel fraud intelligence project.</desc>
-  <defs>
-    <linearGradient id="ink" x1="0" x2="1">
-      <stop offset="0" stop-color="#65f4df"/>
-      <stop offset=".52" stop-color="#8bc8ff"/>
-      <stop offset="1" stop-color="#c4a0ff"/>
-    </linearGradient>
-    <radialGradient id="wash">
-      <stop offset="0" stop-color="#153f57" stop-opacity=".9"/>
-      <stop offset="1" stop-color="#07111f" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="frame"><rect width="1200" height="190" rx="18"/></clipPath>
-  </defs>
-  <g clip-path="url(#frame)">
-    <rect width="1200" height="190" fill="#07111f"/>
-    <rect width="1200" height="190" fill="url(#wash)"/>
-    <g fill="none" stroke="#1c5366" stroke-opacity=".65">
-      <circle cx="1040" cy="95" r="34"/><circle cx="1040" cy="95" r="66"/><circle cx="1040" cy="95" r="98"/><circle cx="1040" cy="95" r="130"/>
-      <path d="M890 95H1190M1040 -25V215M930 -15L1150 205M930 205L1150 -15"/>
-    </g>
-    <path d="M1040 95 L1040 -35 A130 130 0 0 1 1168 105 Z" fill="#4debd4" opacity=".09">
-      <animateTransform attributeName="transform" type="rotate" from="0 1040 95" to="360 1040 95" dur="9s" repeatCount="indefinite"/>
-    </path>
-    <path d="M910 95H1170" stroke="#65f4df" stroke-opacity=".5" stroke-dasharray="3 8">
-      <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="2s" repeatCount="indefinite"/>
-    </path>
-    <g fill="#65f4df">
-      <circle cx="1040" cy="95" r="4"><animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/></circle>
-      <circle cx="1102" cy="45" r="3"><animate attributeName="opacity" values=".25;1;.25" dur="2.7s" repeatCount="indefinite"/></circle>
-      <circle cx="974" cy="130" r="3"><animate attributeName="opacity" values="1;.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
-    </g>
-    <rect x="44" y="43" width="5" height="102" rx="2.5" fill="url(#ink)"/>
-    <text x="72" y="86" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="3" fill="url(#ink)">SENTINEL</text>
-    <text x="74" y="119" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="5" fill="#dceaf7">FRAUD INTELLIGENCE</text>
-    <text x="75" y="151" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="2" fill="#86a9c1">RISK SIGNALS / MODEL OBSERVABILITY / REVIEW</text>
-    <path d="M72 164H690" stroke="url(#ink)" stroke-opacity=".65">
-      <animate attributeName="stroke-dasharray" values="0 620;620 0;0 620" dur="5s" repeatCount="indefinite"/>
-    </path>
-  </g>
+<title id="title">Sentinel · Fraud Intelligence</title><desc id="desc">Animated data streams converge into a shield emblem beside the Sentinel title.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72f5dc"/><stop offset="1" stop-color="#a88cff"/></linearGradient><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#091827"/><stop offset="1" stop-color="#12112b"/></linearGradient></defs>
+<rect width="1200" height="190" rx="18" fill="url(#bg)"/>
+<g stroke="#28475d" stroke-width="1" opacity=".6"><path d="M0 38H1200M0 76H1200M0 114H1200M0 152H1200M80 0V190M160 0V190M240 0V190M320 0V190M400 0V190M480 0V190M560 0V190M640 0V190M720 0V190M800 0V190M880 0V190M960 0V190M1040 0V190M1120 0V190"/></g>
+<g fill="none" stroke="url(#g)" stroke-width="2" opacity=".7"><path d="M760 25H850L900 65H1020"><animate attributeName="stroke-dasharray" values="0 400;400 0;0 400" dur="4s" repeatCount="indefinite"/></path><path d="M760 95H860L910 135H1020"><animate attributeName="stroke-dasharray" values="400 0;0 400;400 0" dur="4s" repeatCount="indefinite"/></path><path d="M790 160H860L920 105H1020"><animate attributeName="stroke-dashoffset" values="0;-240" dur="3s" repeatCount="indefinite"/></path></g>
+<g transform="translate(1035 95)"><path d="M0 -66L54 -44V4C54 38 27 58 0 72C-27 58 -54 38 -54 4V-44Z" fill="#122c40" stroke="url(#g)" stroke-width="3"><animate attributeName="stroke-width" values="2;4;2" dur="3s" repeatCount="indefinite"/></path><path d="M-25 0L-7 18L28 -21" fill="none" stroke="#72f5dc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/></path></g>
+<text x="62" y="80" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="47" font-weight="800" letter-spacing="4" fill="#f0f7ff">SENTINEL</text><text x="65" y="116" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="5" fill="url(#g)">FRAUD INTELLIGENCE</text><text x="66" y="148" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="2" fill="#9ab5c9">TRANSACTION SIGNALS  ·  MODEL EVIDENCE  ·  ANALYST REVIEW</text>
 </svg>
