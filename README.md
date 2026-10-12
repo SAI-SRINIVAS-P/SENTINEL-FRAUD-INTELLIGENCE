@@ -1,7 +1,8 @@
-![Sentinel Risk Signal Engine animated title](docs/sentinel-signal-engine-title.svg)
+<p align="center">
+  <img src="docs/sentinel-signal-engine-title.svg" width="100%" alt="Animated title: # SENTINEL FRAUD INTELLIGENCE"/>
+</p>
 
-# SENTINEL / FRAUD INTELLIGENCE
-### A risk observatory for transaction signals, model decisions, and analyst review
+<p align="center"><em>A risk observatory for transaction signals, model decisions, and analyst review</em></p>
 
 > **Project status:** CI checks passing · API tests green · Dashboard build green  
 > **Purpose:** Educational and portfolio demonstration. This is not a production payment-risk service.
