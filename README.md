@@ -1,3 +1,5 @@
+![Animated Sentinel Fraud Intelligence title](docs/sentinel-title-animation.svg)
+
 # SENTINEL / FRAUD INTELLIGENCE
 ### A risk observatory for transaction signals, model decisions, and analyst review
 
@@ -7,10 +9,10 @@
 Sentinel is a full-stack fraud-risk prototype built around a clear operational loop: prepare data, train and evaluate a model, score transactions, review flagged cases, and observe model behavior over time. Its interface uses a dark, image-led “Risk Observatory” visual system with a horizontal navigation dock, telemetry panels, and section-aware browser history.
 
 <p align="center">
-  <a href="https://github.com/SAI-SRINIVAS-P/SENTINEL-FRAUD-INTELLIGENCE/actions"><strong>CI workflows</strong></a>
-  · <a href="#quick-start-docker-recommended"><strong>Run locally</strong></a>
-  · <a href="#visual-tour"><strong>Visual tour</strong></a>
-  · <a href="#api-reference"><strong>API reference</strong></a>
+  <a href="https://github.com/SAI-SRINIVAS-P/SENTINEL-FRAUD-INTELLIGENCE/actions"><img alt="CI Workflows" src="https://img.shields.io/badge/CI_Workflows-view_runs-10283a?style=for-the-badge&logo=githubactions&logoColor=65f4df"></a>
+  <a href="#quick-start-docker-recommended"><img alt="Run Locally" src="https://img.shields.io/badge/Run_Locally-quick_start-10283a?style=for-the-badge&logo=docker&logoColor=65f4df"></a>
+  <a href="#visual-tour"><img alt="Visual Tour" src="https://img.shields.io/badge/Visual_Tour-open_deck-10283a?style=for-the-badge&logo=googlephotos&logoColor=65f4df"></a>
+  <a href="#api-reference"><img alt="API Reference" src="https://img.shields.io/badge/API_Reference-endpoints-10283a?style=for-the-badge&logo=fastapi&logoColor=65f4df"></a>
 </p>
 
 ---
