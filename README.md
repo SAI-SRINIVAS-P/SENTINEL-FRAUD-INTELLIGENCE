@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/sentinel-fraud-intelligence-title.svg" width="100%" alt="Animated title: # SENTINEL FRAUD INTELLIGENCE"/>
+  <img src="docs/sentinel-title-telemetry-v2.svg" width="100%" alt="Animated title: # SENTINEL FRAUD INTELLIGENCE"/>
 </p>
 
 <p align="center"><em>A risk observatory for transaction signals, model decisions, and analyst review</em></p>
