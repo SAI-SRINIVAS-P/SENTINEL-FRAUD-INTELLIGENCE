@@ -2,6 +2,10 @@
   <img src="docs/sentinel-title-telemetry-v2.svg" width="100%" alt="Animated title: # SENTINEL FRAUD INTELLIGENCE"/>
 </p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=700&amp;size=17&amp;duration=2200&amp;pause=750&amp;color=5FFFE8&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=42&amp;lines=TRANSACTION+RISK+INTELLIGENCE;ML.NET+FRAUD+SCORING;LIVE+ANALYST+REVIEW;MODEL+HEALTH+%2F+DRIFT+MONITORING" alt="Animated typing line cycling through Sentinel fraud intelligence capabilities"/>
+</p>
+
 <p align="center"><em>A risk observatory for transaction signals, model decisions, and analyst review</em></p>
 
 > **Project status:** CI checks passing · API tests green · Dashboard build green  
