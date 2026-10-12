@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">Sentinel website walkthrough</title><desc id="desc">An automatically cycling six-slide visual tour of the Sentinel fraud-risk website: sign-in, overview, scoring, analyst review, model evaluation, and monitoring.</desc>
+<defs>
+ <linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08131f"/><stop offset="1" stop-color="#101d31"/></linearGradient>
+ <linearGradient id="mint" x1="0" x2="1"><stop stop-color="#62e5d2"/><stop offset="1" stop-color="#b4ffe9"/></linearGradient>
+ <style>
+ .label{font:700 13px ui-monospace,Consolas,monospace;letter-spacing:2px;fill:#76e5d4}
+ .heading{font:700 29px Inter,Segoe UI,Arial,sans-serif;fill:#edf7ff}
+ .small{font:13px Inter,Segoe UI,Arial,sans-serif;fill:#91a9bc}
+ .tiny{font:11px Inter,Segoe UI,Arial,sans-serif;fill:#92aabc}
+ .metric{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#f1f8ff}
+ .panel{fill:#111f30;stroke:#2b4356;stroke-width:1}
+ .line{stroke:#284154;stroke-width:1}
+ .accent{fill:#67e5d4}
+ .purple{fill:#b9a9ff}
+ .amber{fill:#f2c477}
+ </style>
+</defs>
+<rect width="1200" height="720" rx="22" fill="url(#base)"/>
+<g opacity=".28" stroke="#20394c"><path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200M0 630H1200"/><path d="M100 0V720M200 0V720M300 0V720M400 0V720M500 0V720M600 0V720M700 0V720M800 0V720M900 0V720M1000 0V720M1100 0V720"/></g>
+<!-- Each slide remains readable as a standalone frame; SMIL fades between pages. -->
+<g id="slide1">
+ <rect x="38" y="34" width="1124" height="652" rx="18" fill="#0b1725" stroke="#355065"/>
+ <rect x="38" y="34" width="1124" height="48" rx="18" fill="#132337"/><circle cx="65" cy="58" r="5" fill="#f08a91"/><circle cx="83" cy="58" r="5" fill="#f2c477"/><circle cx="101" cy="58" r="5" fill="#67e5d4"/>
+ <text x="65" y="126" class="label">01 / ACCESS GATEWAY</text><text x="65" y="168" class="heading">Enter the Risk Observatory</text><text x="65" y="195" class="small">Secure sign-in for analysts and administrators</text>
+ <rect x="65" y="230" width="515" height="390" rx="14" fill="#0d1c2a" stroke="#254255"/>
+ <circle cx="322" cy="350" r="72" fill="none" stroke="#275f68"/><circle cx="322" cy="350" r="48" fill="none" stroke="#347c7d"/><circle cx="322" cy="350" r="9" fill="#67e5d4"/>
+ <text x="322" y="458" text-anchor="middle" class="heading">SENTINEL</text><text x="322" y="486" text-anchor="middle" class="tiny">FRAUD INTELLIGENCE</text>
+ <rect x="630" y="230" width="475" height="390" rx="14" class="panel"/>
+ <text x="670" y="280" class="label">ANALYST ACCESS</text><text x="670" y="319" class="heading">Welcome back</text>
+ <rect x="670" y="346" width="395" height="48" rx="7" fill="#0a1724" stroke="#345064"/><text x="688" y="375" class="small">Email address</text>
+ <rect x="670" y="410" width="395" height="48" rx="7" fill="#0a1724" stroke="#345064"/><text x="688" y="439" class="small">Password</text>
+ <rect x="670" y="480" width="395" height="48" rx="7" fill="url(#mint)"/><text x="867" y="509" text-anchor="middle" font-size="14" font-weight="700" fill="#09202a">SIGN IN</text>
+ <text x="670" y="560" class="tiny">Illustrative UI frame, not a live screenshot</text>
+ <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.15;.16;1" dur="30s" repeatCount="indefinite"/>
+</g>
+<g id="slide2" opacity="0">
+ <rect x="38" y="34" width="1124" height="652" rx="18" fill="#0b1725" stroke="#355065"/>
+ <rect x="38" y="34" width="205" height="652" rx="18" fill="#0c1a29"/><text x="65" y="70" class="label">SENTINEL</text><text x="65" y="125" class="small">Overview</text><text x="65" y="166" class="small">Live scoring</text><text x="65" y="207" class="small">Review queue</text><text x="65" y="248" class="small">Evaluation Lab</text><text x="65" y="289" class="small">Model health</text>
+ <text x="280" y="82" class="label">02 / OPERATIONS OVERVIEW</text><text x="280" y="119" class="heading">Risk activity, at a glance</text>
+ <g><rect x="280" y="150" width="190" height="112" rx="10" class="panel"/><text x="300" y="181" class="tiny">SCORED</text><text x="300" y="221" class="metric">12,804</text><text x="300" y="244" class="tiny">last 24 hours</text>
+ <rect x="490" y="150" width="190" height="112" rx="10" class="panel"/><text x="510" y="181" class="tiny">FLAGGED</text><text x="510" y="221" class="metric">186</text><text x="510" y="244" class="tiny">requires review</text>
+ <rect x="700" y="150" width="190" height="112" rx="10" class="panel"/><text x="720" y="181" class="tiny">PENDING</text><text x="720" y="221" class="metric">24</text><text x="720" y="244" class="tiny">open cases</text>
+ <rect x="910" y="150" width="215" height="112" rx="10" class="panel"/><text x="930" y="181" class="tiny">ACTIVE MODEL</text><text x="930" y="221" class="metric">v1.4.2</text><text x="930" y="244" class="tiny">illustrative value</text></g>
+ <rect x="280" y="286" width="520" height="330" rx="10" class="panel"/><text x="305" y="322" class="small">Transaction activity</text><path d="M310 550H770M310 490H770M310 430H770M310 370H770" class="line"/><path d="M310 520L360 488L410 502L460 415L510 440L560 380L610 420L660 365L710 392L770 340" fill="none" stroke="#67e5d4" stroke-width="3"/><path d="M310 560L360 540L410 548L460 520L510 535L560 505L610 525L660 495L710 510L770 478" fill="none" stroke="#b9a9ff" stroke-width="2"/>
+ <rect x="820" y="286" width="305" height="330" rx="10" class="panel"/><text x="845" y="322" class="small">Risk distribution</text><circle cx="972" cy="438" r="72" fill="none" stroke="#253c4e" stroke-width="20"/><circle cx="972" cy="438" r="72" fill="none" stroke="#67e5d4" stroke-width="20" stroke-dasharray="220 453" transform="rotate(-90 972 438)"/><circle cx="972" cy="438" r="72" fill="none" stroke="#b9a9ff" stroke-width="20" stroke-dasharray="105 453" stroke-dashoffset="-220" transform="rotate(-90 972 438)"/><text x="972" y="443" text-anchor="middle" class="metric">24h</text><text x="850" y="555" class="tiny">Low risk</text><text x="940" y="555" class="tiny">Elevated</text><text x="1030" y="555" class="tiny">High</text>
+ <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.16;.17;.32;.33;1" dur="30s" repeatCount="indefinite"/>
+</g>
+<g id="slide3" opacity="0">
+ <rect x="38" y="34" width="1124" height="652" rx="18" fill="#0b1725" stroke="#355065"/><text x="70" y="82" class="label">03 / LIVE SCORING</text><text x="70" y="123" class="heading">Inspect a transaction signal</text><text x="70" y="151" class="small">Score an input vector against the currently loaded model.</text>
+ <rect x="70" y="185" width="520" height="430" rx="12" class="panel"/><text x="100" y="225" class="small">Transaction features</text><text x="100" y="268" class="tiny">EXTERNAL REFERENCE</text><rect x="100" y="282" width="455" height="42" rx="6" fill="#091724" stroke="#2d475b"/><text x="116" y="308" class="small">demo-tx-001</text><text x="100" y="356" class="tiny">AMOUNT</text><rect x="100" y="370" width="215" height="42" rx="6" fill="#091724" stroke="#2d475b"/><text x="116" y="396" class="small">2499.00</text><text x="340" y="356" class="tiny">TIME FEATURE</text><rect x="340" y="370" width="215" height="42" rx="6" fill="#091724" stroke="#2d475b"/><text x="356" y="396" class="small">50000</text><text x="100" y="452" class="tiny">28 PCA FEATURES</text><rect x="100" y="466" width="455" height="68" rx="6" fill="#091724" stroke="#2d475b"/><text x="116" y="494" class="small">V1 · V2 · V3 · ... · V28</text><text x="116" y="516" class="tiny">Finite numeric values required</text><rect x="100" y="554" width="455" height="40" rx="6" fill="url(#mint)"/><text x="327" y="579" text-anchor="middle" font-size="14" font-weight="700" fill="#09202a">SCORE TRANSACTION</text>
+ <rect x="620" y="185" width="505" height="430" rx="12" class="panel"/><text x="655" y="225" class="small">Scoring response</text><circle cx="872" cy="360" r="105" fill="none" stroke="#253c4e" stroke-width="17"/><circle cx="872" cy="360" r="105" fill="none" stroke="#f2c477" stroke-width="17" stroke-dasharray="240 660" transform="rotate(-90 872 360)"/><text x="872" y="355" text-anchor="middle" class="metric">0.82</text><text x="872" y="382" text-anchor="middle" class="tiny">ILLUSTRATIVE RISK</text><rect x="700" y="495" width="345" height="44" rx="8" fill="#392b24" stroke="#a87949"/><text x="872" y="522" text-anchor="middle" font-size="14" font-weight="700" fill="#f2c477">REVIEW RECOMMENDED</text><text x="872" y="570" text-anchor="middle" class="tiny">Example values only, not a model prediction</text>
+ <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.33;.34;.49;.50;1" dur="30s" repeatCount="indefinite"/>
+</g>
+<g id="slide4" opacity="0">
+ <rect x="38" y="34" width="1124" height="652" rx="18" fill="#0b1725" stroke="#355065"/><text x="70" y="82" class="label">04 / ANALYST REVIEW</text><text x="70" y="123" class="heading">A queue built for human decisions</text><rect x="70" y="155" width="1060" height="460" rx="12" class="panel"/>
+ <text x="100" y="195" class="tiny">TRANSACTION</text><text x="430" y="195" class="tiny">RISK SCORE</text><text x="590" y="195" class="tiny">MODEL</text><text x="745" y="195" class="tiny">STATUS</text><text x="930" y="195" class="tiny">ACTION</text>
+ <g class="small"><path d="M95 212H1100M95 280H1100M95 348H1100M95 416H1100M95 484H1100M95 552H1100" class="line"/><text x="100" y="250">txn-08F2</text><text x="430" y="250">0.91</text><text x="590" y="250">v1.4.2</text><text x="745" y="250" fill="#f2c477">Pending</text><text x="930" y="250" fill="#67e5d4">Review →</text><text x="100" y="318">txn-14A7</text><text x="430" y="318">0.78</text><text x="590" y="318">v1.4.2</text><text x="745" y="318" fill="#f2c477">Pending</text><text x="930" y="318" fill="#67e5d4">Review →</text><text x="100" y="386">txn-9C10</text><text x="430" y="386">0.73</text><text x="590" y="386">v1.4.1</text><text x="745" y="386" fill="#b9a9ff">In review</text><text x="930" y="386" fill="#67e5d4">Open →</text><text x="100" y="454">txn-71B3</text><text x="430" y="454">0.66</text><text x="590" y="454">v1.4.2</text><text x="745" y="454" fill="#f2c477">Pending</text><text x="930" y="454" fill="#67e5d4">Review →</text><text x="100" y="522">txn-52D1</text><text x="430" y="522">0.61</text><text x="590" y="522">v1.4.2</text><text x="745" y="522" fill="#b9a9ff">Resolved</text><text x="930" y="522" fill="#67e5d4">Audit →</text></g>
+ <text x="100" y="585" class="tiny">Mock case identifiers and scores demonstrate layout only.</text>
+ <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.50;.51;.66;.67;1" dur="30s" repeatCount="indefinite"/>
+</g>
+<g id="slide5" opacity="0">
+ <rect x="38" y="34" width="1124" height="652" rx="18" fill="#0b1725" stroke="#355065"/><text x="70" y="82" class="label">05 / EVALUATION LAB</text><text x="70" y="123" class="heading">Measure the model beyond accuracy</text>
+ <g><rect x="70" y="155" width="235" height="110" rx="10" class="panel"/><text x="95" y="188" class="tiny">PR-AUC</text><text x="95" y="230" class="metric">0.84</text><rect x="325" y="155" width="235" height="110" rx="10" class="panel"/><text x="350" y="188" class="tiny">PRECISION</text><text x="350" y="230" class="metric">0.79</text><rect x="580" y="155" width="235" height="110" rx="10" class="panel"/><text x="605" y="188" class="tiny">RECALL</text><text x="605" y="230" class="metric">0.72</text><rect x="835" y="155" width="295" height="110" rx="10" class="panel"/><text x="860" y="188" class="tiny">F1 SCORE</text><text x="860" y="230" class="metric">0.75</text></g>
+ <rect x="70" y="290" width="650" height="325" rx="12" class="panel"/><text x="100" y="330" class="small">Precision / recall by threshold</text><path d="M110 555H675M110 500H675M110 445H675M110 390H675" class="line"/><path d="M110 405L220 420L330 450L440 485L550 515L675 535" stroke="#67e5d4" stroke-width="3" fill="none"/><path d="M110 535L220 505L330 470L440 440L550 415L675 395" stroke="#b9a9ff" stroke-width="3" fill="none"/><text x="120" y="585" class="tiny">Lower threshold</text><text x="570" y="585" class="tiny">Higher threshold</text>
+ <rect x="745" y="290" width="385" height="325" rx="12" class="panel"/><text x="775" y="330" class="small">Confusion matrix</text><rect x="790" y="365" width="135" height="90" rx="7" fill="#16483f"/><rect x="940" y="365" width="135" height="90" rx="7" fill="#4b332a"/><rect x="790" y="465" width="135" height="90" rx="7" fill="#4b332a"/><rect x="940" y="465" width="135" height="90" rx="7" fill="#16483f"/><text x="857" y="405" text-anchor="middle" class="metric">TN</text><text x="1007" y="405" text-anchor="middle" class="metric">FP</text><text x="857" y="505" text-anchor="middle" class="metric">FN</text><text x="1007" y="505" text-anchor="middle" class="metric">TP</text><text x="960" y="590" text-anchor="middle" class="tiny">Illustrative metrics only</text>
+ <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.67;.68;.83;.84;1" dur="30s" repeatCount="indefinite"/>
+</g>
+<g id="slide6" opacity="0">
+ <rect x="38" y="34" width="1124" height="652" rx="18" fill="#0b1725" stroke="#355065"/><text x="70" y="82" class="label">06 / MODEL HEALTH</text><text x="70" y="123" class="heading">Watch behavior after deployment</text>
+ <rect x="70" y="155" width="500" height="220" rx="12" class="panel"/><text x="100" y="195" class="small">Feature shift screen</text><text x="100" y="238" class="tiny">Average standardized shift</text><rect x="100" y="260" width="405" height="18" rx="9" fill="#22394b"/><rect x="100" y="260" width="255" height="18" rx="9" fill="#67e5d4"><animate attributeName="width" values="220;285;255;220" dur="8s" repeatCount="indefinite"/></rect><text x="100" y="310" class="tiny">Screening indicator only, not a formal drift test</text>
+ <rect x="600" y="155" width="530" height="220" rx="12" class="panel"/><text x="630" y="195" class="small">Model registry</text><text x="630" y="238" class="tiny">ACTIVE VERSION</text><text x="630" y="275" class="metric">v1.4.2</text><rect x="875" y="220" width="205" height="42" rx="7" fill="#123a36" stroke="#397a70"/><text x="978" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#8af2df">LOADED</text>
+ <rect x="70" y="400" width="1060" height="215" rx="12" class="panel"/><text x="100" y="440" class="small">Recent system signals</text><path d="M100 565H1090M100 520H1090M100 475H1090" class="line"/><path d="M100 552L170 530L240 545L310 495L380 520L450 478L520 500L590 460L660 492L730 470L800 510L870 485L940 498L1010 455L1090 478" stroke="#67e5d4" stroke-width="3" fill="none"/><text x="100" y="590" class="tiny">Scoring volume</text><text x="970" y="590" class="tiny">Recent window →</text>
+ <animate attributeName="opacity" values="0;0;1;1;1" keyTimes="0;.84;.85;.99;1" dur="30s" repeatCount="indefinite"/>
+</g>
+<rect x="38" y="34" width="1124" height="652" rx="18" fill="none" stroke="#38586c" stroke-width="2"/>
+<text x="600" y="706" text-anchor="middle" font-family="ui-monospace,Consolas,monospace" font-size="11" letter-spacing="3" fill="#6e8fa5">SENTINEL / WEBSITE SCREEN ATLAS / CONCEPTUAL PREVIEW</text>
+</svg>
