@@ -34,7 +34,11 @@ Sentinel is a full-stack fraud-risk prototype built around a clear operational l
 
 ## Visual tour
 
-GitHub README pages do not provide a native interactive image carousel. This tour is therefore organized as a compact, expandable slide deck. The two locally hosted SVG scenes below are the actual background assets used by the interface; expand each section for the corresponding screen's purpose. The attached recording is the reference for the full end-to-end experience.
+The animated slideshow below cycles through six Sentinel website pages, following the workflow shown in the attached project recording: sign-in, overview, live scoring, analyst review, model evaluation, and monitoring. It is a purpose-built visual recreation of those page types, not a set of extracted video frames or live application screenshots. GitHub README does not support a native interactive carousel, so this locally stored SVG advances through the slides automatically.
+
+![Sentinel website page slideshow showing sign-in, overview, live scoring, review queue, evaluation, and model health](docs/sentinel-page-slideshow.svg)
+
+Use the expandable page notes below to jump to a specific screen's description.
 
 <details>
 <summary><strong>Slide 01 · Sign-in / access gateway</strong></summary>
