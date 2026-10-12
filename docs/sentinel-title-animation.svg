@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">SENTINEL / FRAUD INTELLIGENCE</title>
+  <desc id="desc">Animated radar sweep and glowing title for the Sentinel fraud intelligence project.</desc>
+  <defs>
+    <linearGradient id="ink" x1="0" x2="1">
+      <stop offset="0" stop-color="#65f4df"/>
+      <stop offset=".52" stop-color="#8bc8ff"/>
+      <stop offset="1" stop-color="#c4a0ff"/>
+    </linearGradient>
+    <radialGradient id="wash">
+      <stop offset="0" stop-color="#153f57" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#07111f" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="190" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="190" fill="#07111f"/>
+    <rect width="1200" height="190" fill="url(#wash)"/>
+    <g fill="none" stroke="#1c5366" stroke-opacity=".65">
+      <circle cx="1040" cy="95" r="34"/><circle cx="1040" cy="95" r="66"/><circle cx="1040" cy="95" r="98"/><circle cx="1040" cy="95" r="130"/>
+      <path d="M890 95H1190M1040 -25V215M930 -15L1150 205M930 205L1150 -15"/>
+    </g>
+    <path d="M1040 95 L1040 -35 A130 130 0 0 1 1168 105 Z" fill="#4debd4" opacity=".09">
+      <animateTransform attributeName="transform" type="rotate" from="0 1040 95" to="360 1040 95" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path d="M910 95H1170" stroke="#65f4df" stroke-opacity=".5" stroke-dasharray="3 8">
+      <animate attributeName="stroke-dashoffset" from="0" to="-44" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#65f4df">
+      <circle cx="1040" cy="95" r="4"><animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/></circle>
+      <circle cx="1102" cy="45" r="3"><animate attributeName="opacity" values=".25;1;.25" dur="2.7s" repeatCount="indefinite"/></circle>
+      <circle cx="974" cy="130" r="3"><animate attributeName="opacity" values="1;.2;1" dur="3.2s" repeatCount="indefinite"/></circle>
+    </g>
+    <rect x="44" y="43" width="5" height="102" rx="2.5" fill="url(#ink)"/>
+    <text x="72" y="86" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="3" fill="url(#ink)">SENTINEL</text>
+    <text x="74" y="119" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="5" fill="#dceaf7">FRAUD INTELLIGENCE</text>
+    <text x="75" y="151" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" letter-spacing="2" fill="#86a9c1">RISK SIGNALS / MODEL OBSERVABILITY / REVIEW</text>
+    <path d="M72 164H690" stroke="url(#ink)" stroke-opacity=".65">
+      <animate attributeName="stroke-dasharray" values="0 620;620 0;0 620" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
