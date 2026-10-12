@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="t d">
+<title id="t">Sentinel | Risk Signal Engine</title><desc id="d">An animated orbital signal map with a distinctive Sentinel wordmark.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081521"/><stop offset="1" stop-color="#101b30"/></linearGradient>
+ <linearGradient id="type" x1="0" x2="1"><stop stop-color="#b6ffe9"/><stop offset=".48" stop-color="#6de3dd"/><stop offset="1" stop-color="#c8c2ff"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#1a756f" stop-opacity=".45"/><stop offset="1" stop-color="#1a756f" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="220" rx="22" fill="url(#bg)"/><circle cx="980" cy="108" r="210" fill="url(#halo)"/>
+<g stroke="#294454" stroke-width="1" fill="none" opacity=".8">
+ <ellipse cx="980" cy="108" rx="170" ry="54" transform="rotate(-32 980 108)"/><ellipse cx="980" cy="108" rx="170" ry="54" transform="rotate(32 980 108)"/><circle cx="980" cy="108" r="83"/><circle cx="980" cy="108" r="126"/>
+</g>
+<g transform="translate(980 108)">
+ <circle r="7" fill="#a8ffed"><animate attributeName="r" values="5;10;5" dur="2.4s" repeatCount="indefinite"/></circle>
+ <circle r="30" fill="none" stroke="#72e9d8" stroke-opacity=".7"><animate attributeName="r" values="18;38;18" dur="3.5s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".8;.08;.8" dur="3.5s" repeatCount="indefinite"/></circle>
+ <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/><circle cx="126" cy="0" r="5" fill="#c8c2ff"/><circle cx="-126" cy="0" r="3" fill="#6de3dd"/></g>
+</g>
+<path d="M55 47V173" stroke="#6de3dd" stroke-width="3"/><path d="M66 47V173" stroke="#6de3dd" stroke-opacity=".22" stroke-width="1"/>
+<text x="88" y="100" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="5" fill="url(#type)">SENTINEL</text>
+<text x="91" y="135" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" letter-spacing="6" fill="#edf7fb">RISK SIGNAL ENGINE</text>
+<text x="92" y="164" font-family="ui-monospace,Consolas,monospace" font-size="12" letter-spacing="2" fill="#8daaba">SCORE  /  REVIEW  /  EVALUATE  /  OBSERVE</text>
+<path d="M90 184H680" stroke="#6de3dd" stroke-width="1" stroke-dasharray="590" stroke-dashoffset="590"><animate attributeName="stroke-dashoffset" values="590;0;590" dur="6s" repeatCount="indefinite"/></path>
+</svg>
