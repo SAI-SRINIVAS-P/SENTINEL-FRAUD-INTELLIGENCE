@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+<title id="title">Sentinel Fraud Intelligence</title>
+<desc id="desc">Centered animated Sentinel Fraud Intelligence title with a soft neon gradient, orbiting signal nodes, and a moving underline.</desc>
+<defs>
+  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071521"/>
+    <stop offset=".55" stop-color="#0b1728"/>
+    <stop offset="1" stop-color="#111b31"/>
+  </linearGradient>
+  <linearGradient id="headline" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#b4ffe8">
+      <animate attributeName="stop-color" values="#b4ffe8;#79e8df;#c9c2ff;#b4ffe8" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset=".52" stop-color="#70e4db">
+      <animate attributeName="stop-color" values="#70e4db;#bdffed;#9fa4ff;#70e4db" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="1" stop-color="#c9c2ff">
+      <animate attributeName="stop-color" values="#c9c2ff;#a2edec;#bdffe9;#c9c2ff" dur="8s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+  <radialGradient id="aura">
+    <stop offset="0" stop-color="#1d807d" stop-opacity=".27"/>
+    <stop offset="1" stop-color="#1d807d" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow" x="-20%" y="-100%" width="140%" height="300%">
+    <feGaussianBlur stdDeviation="5"/>
+  </filter>
+</defs>
+<rect width="1200" height="240" rx="24" fill="url(#background)"/>
+<ellipse cx="600" cy="116" rx="480" ry="150" fill="url(#aura)"/>
+<g fill="none" stroke="#2c4b5a" stroke-width="1" opacity=".55">
+  <ellipse cx="600" cy="116" rx="440" ry="78"/>
+  <ellipse cx="600" cy="116" rx="380" ry="58" transform="rotate(-8 600 116)"/>
+  <ellipse cx="600" cy="116" rx="305" ry="42" transform="rotate(7 600 116)"/>
+  <path d="M54 44H1146M54 190H1146" stroke-dasharray="2 12" opacity=".7"/>
+</g>
+<g transform="translate(600 116)" fill="none">
+  <circle r="86" stroke="#70e4db" stroke-opacity=".18">
+    <animate attributeName="r" values="78;94;78" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".1;.34;.1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="112" stroke="#a6a0ff" stroke-opacity=".17" stroke-dasharray="3 10">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="32s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#baffed" stroke="none">
+    <animate attributeName="r" values="4;7;4" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+    <circle cx="112" cy="0" r="4" fill="#c8c2ff" stroke="none"/>
+    <circle cx="-112" cy="0" r="3" fill="#70e4db" stroke="none"/>
+  </g>
+</g>
+<text x="600" y="113" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="850" letter-spacing="2.2" fill="#76e6db" opacity=".32" filter="url(#glow)">SENTINEL FRAUD INTELLIGENCE</text>
+<text x="600" y="113" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="850" letter-spacing="2.2" fill="url(#headline)">SENTINEL FRAUD INTELLIGENCE
+  <animate attributeName="opacity" values=".92;1;.92" dur="4s" repeatCount="indefinite"/>
+</text>
+<path d="M220 157H980" stroke="#2c535d" stroke-width="2" stroke-linecap="round"/>
+<path d="M220 157H980" stroke="#72e7dc" stroke-width="2" stroke-linecap="round" stroke-dasharray="130 630" stroke-dashoffset="760">
+  <animate attributeName="stroke-dashoffset" values="760;0;-760" dur="5.5s" repeatCount="indefinite"/>
+</path>
+<g fill="#82eee0">
+  <circle cx="115" cy="116" r="3"><animate attributeName="opacity" values=".25;1;.25" dur="2.6s" repeatCount="indefinite"/></circle>
+  <circle cx="1085" cy="116" r="3"><animate attributeName="opacity" values="1;.25;1" dur="3.1s" repeatCount="indefinite"/></circle>
+</g>
+</svg>
