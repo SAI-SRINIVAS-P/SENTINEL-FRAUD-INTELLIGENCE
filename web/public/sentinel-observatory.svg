@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1500" viewBox="0 0 2400 1500" fill="none">
+ <defs>
+  <linearGradient id="sky" x1="100" y1="0" x2="2200" y2="1500" gradientUnits="userSpaceOnUse"><stop stop-color="#080E1E"/><stop offset=".36" stop-color="#0A1B33"/><stop offset=".68" stop-color="#122546"/><stop offset="1" stop-color="#180F31"/></linearGradient>
+  <radialGradient id="cyanGlow" cx="0" cy="0" r="1" gradientTransform="matrix(690 240 -270 770 1640 520)" gradientUnits="userSpaceOnUse"><stop stop-color="#1AC9D7" stop-opacity=".28"/><stop offset="1" stop-color="#1AC9D7" stop-opacity="0"/></radialGradient>
+  <radialGradient id="violetGlow" cx="0" cy="0" r="1" gradientTransform="matrix(650 250 -300 790 2050 350)" gradientUnits="userSpaceOnUse"><stop stop-color="#8867F9" stop-opacity=".30"/><stop offset="1" stop-color="#8867F9" stop-opacity="0"/></radialGradient>
+  <radialGradient id="sun" cx="0" cy="0" r="1" gradientTransform="matrix(380 190 -210 430 1990 1030)" gradientUnits="userSpaceOnUse"><stop stop-color="#F5A35E" stop-opacity=".35"/><stop offset="1" stop-color="#F5A35E" stop-opacity="0"/></radialGradient>
+  <radialGradient id="globe" cx="0" cy="0" r="1" gradientTransform="matrix(440 500 -490 430 1610 340)" gradientUnits="userSpaceOnUse"><stop stop-color="#1A4772"/><stop offset=".58" stop-color="#0A1C36"/><stop offset="1" stop-color="#050B18"/></radialGradient>
+  <linearGradient id="arc" x1="1160" y1="200" x2="2120" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#44F2E9"/><stop offset=".55" stop-color="#3D9FFF"/><stop offset="1" stop-color="#B08BFF"/></linearGradient>
+  <linearGradient id="city" x1="0" y1="860" x2="0" y2="1500" gradientUnits="userSpaceOnUse"><stop stop-color="#172C49"/><stop offset="1" stop-color="#050916"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6CE7F4" stop-opacity=".20"/><stop offset="1" stop-color="#9B7CFF" stop-opacity=".025"/></linearGradient>
+  <filter id="blur40" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  <filter id="glow12" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="fineGrid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" stroke="#76BBE7" stroke-opacity=".065" stroke-width="1"/></pattern>
+  <clipPath id="globeClip"><circle cx="1630" cy="520" r="435"/></clipPath>
+ </defs>
+ <rect width="2400" height="1500" fill="url(#sky)"/><rect width="2400" height="1500" fill="url(#fineGrid)"/>
+ <rect width="2400" height="1500" fill="url(#cyanGlow)"/><rect width="2400" height="1500" fill="url(#violetGlow)"/><rect width="2400" height="1500" fill="url(#sun)"/>
+ <g opacity=".75" fill="#D6F8FF">
+  <circle cx="118" cy="175" r="2"/><circle cx="297" cy="274" r="1.5"/><circle cx="492" cy="119" r="1.8"/><circle cx="723" cy="235" r="1.4"/><circle cx="865" cy="97" r="2"/><circle cx="1058" cy="161" r="1.4"/><circle cx="1230" cy="75" r="1.6"/><circle cx="1380" cy="192" r="1.8"/><circle cx="1869" cy="103" r="1.5"/><circle cx="2130" cy="180" r="2"/><circle cx="2268" cy="92" r="1.5"/><circle cx="2324" cy="346" r="1.8"/><circle cx="82" cy="442" r="1.6"/><circle cx="480" cy="482" r="1.5"/><circle cx="750" cy="390" r="1.8"/><circle cx="1100" cy="410" r="1.5"/><circle cx="2250" cy="550" r="1.9"/><circle cx="2080" cy="665" r="1.4"/>
+ </g>
+ <!-- the luminous transaction sphere -->
+ <circle cx="1630" cy="520" r="490" stroke="#55E4ED" stroke-opacity=".09" stroke-width="2"/><circle cx="1630" cy="520" r="468" stroke="#6F9EFF" stroke-opacity=".18" stroke-width="1.5"/>
+ <circle cx="1630" cy="520" r="435" fill="url(#globe)" stroke="#4DDDEB" stroke-opacity=".48" stroke-width="2"/>
+ <g clip-path="url(#globeClip)">
+  <rect x="1180" y="80" width="900" height="890" fill="url(#fineGrid)"/>
+  <ellipse cx="1630" cy="520" rx="180" ry="435" stroke="#4CCFEC" stroke-opacity=".28" stroke-width="2"/><ellipse cx="1630" cy="520" rx="320" ry="435" stroke="#4CCFEC" stroke-opacity=".20" stroke-width="2"/>
+  <ellipse cx="1630" cy="520" rx="435" ry="120" stroke="#58BDF0" stroke-opacity=".24" stroke-width="2"/><ellipse cx="1630" cy="520" rx="435" ry="250" stroke="#58BDF0" stroke-opacity=".18" stroke-width="2"/><path d="M1195 520H2065M1210 430H2050M1210 610H2050" stroke="#58BDF0" stroke-opacity=".12"/>
+  <!-- abstract continent silhouettes -->
+  <path d="M1322 208 1382 180 1432 203 1461 256 1432 300 1453 340 1413 381 1379 355 1351 312 1304 285 1286 244Z" fill="#1D6C80" fill-opacity=".43" stroke="#65DFEA" stroke-opacity=".54" stroke-width="2"/>
+  <path d="M1422 392 1470 413 1492 463 1475 508 1504 560 1483 622 1450 687 1418 663 1405 600 1378 544 1391 495 1360 449Z" fill="#1C6783" fill-opacity=".44" stroke="#55CDE5" stroke-opacity=".42" stroke-width="2"/>
+  <path d="M1584 210 1640 177 1683 195 1712 233 1764 225 1800 255 1794 294 1834 314 1820 349 1778 365 1749 409 1699 416 1662 383 1618 376 1594 338 1551 321 1542 276Z" fill="#1B728B" fill-opacity=".43" stroke="#6BE8E6" stroke-opacity=".50" stroke-width="2"/>
+  <path d="M1670 424 1720 411 1762 446 1777 490 1750 528 1762 578 1729 632 1702 681 1666 651 1638 601 1619 550 1632 499 1604 463Z" fill="#23688D" fill-opacity=".45" stroke="#66D9EC" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M1800 690 1844 666 1890 686 1910 724 1880 759 1840 753 1816 727Z" fill="#246A83" fill-opacity=".40" stroke="#5FD6E8" stroke-opacity=".34" stroke-width="2"/>
+  <!-- flight paths and transaction routes -->
+  <g stroke="url(#arc)" stroke-width="2.5" stroke-opacity=".9"><path d="M1260 410Q1490 115 1742 337"/><path d="M1330 665Q1590 280 1930 498"/><path d="M1375 285Q1640 660 1945 360"/><path d="M1245 540Q1510 785 1890 600"/><path d="M1490 210Q1740 160 1993 446"/><path d="M1375 750Q1560 500 1775 715"/></g>
+  <g filter="url(#glow12)"><circle cx="1260" cy="410" r="8" fill="#73F5E7"/><circle cx="1742" cy="337" r="7" fill="#57CBFF"/><circle cx="1330" cy="665" r="7" fill="#F99D75"/><circle cx="1930" cy="498" r="8" fill="#FE6B86"/><circle cx="1375" cy="285" r="6" fill="#78F2E5"/><circle cx="1945" cy="360" r="8" fill="#A99BFF"/><circle cx="1245" cy="540" r="6" fill="#F4B56E"/><circle cx="1890" cy="600" r="7" fill="#61DCEC"/><circle cx="1490" cy="210" r="6" fill="#5FDCEC"/><circle cx="1993" cy="446" r="7" fill="#F86C88"/></g>
+ </g>
+ <!-- wide orbital traces extend into the room -->
+ <ellipse cx="1630" cy="520" rx="610" ry="250" transform="rotate(-22 1630 520)" stroke="#6AE5E8" stroke-opacity=".26" stroke-width="2"/><ellipse cx="1630" cy="520" rx="560" ry="330" transform="rotate(31 1630 520)" stroke="#9B80FF" stroke-opacity=".19" stroke-width="2"/>
+ <path d="M815 850Q1140 610 1490 725T2220 660" stroke="#36CFDF" stroke-opacity=".34" stroke-width="2"/><path d="M770 920Q1190 715 1560 820T2290 745" stroke="#A78BFA" stroke-opacity=".25" stroke-width="2"/>
+ <!-- distant skyline and observatory architecture -->
+ <ellipse cx="1770" cy="1150" rx="700" ry="190" fill="#F59F62" fill-opacity=".15" filter="url(#blur40)"/>
+ <path d="M0 1138 55 1138V1035H97V1160H130V1104H160V980H195V1055H230V1190H286V1070H322V1147H360V1018H403V1165H450V1095H486V1188H530V1024H560V1150H598V1110H630V1185H685V1088H724V1200H770V1065H808V1150H845V980H872V1155H917V1090H958V1200H1000V1040H1038V1183H1070V1124H1100V1200H1150V1090H1185V1160H1230V995H1265V1150H1300V1090H1340V1200H1380V1040H1418V1165H1460V1115H1500V1195H1530V1058H1570V1190H1610V1090H1640V1210H1690V1040H1730V1190H1775V1085H1815V1200H1850V1000H1880V1150H1920V1060H1962V1188H2000V1090H2040V1192H2080V1030H2118V1160H2156V1080H2195V1195H2230V1100H2270V1200H2310V1045H2345V1170H2400V1500H0Z" fill="url(#city)"/>
+ <g stroke="#58BCD4" stroke-opacity=".22" stroke-width="2">
+  <path d="M160 1010V1165M176 1010V1165M192 1010V1165M367 1040V1138M380 1040V1138M393 1040V1138M537 1048V1150M548 1048V1150M559 1048V1150M859 1002V1142M869 1002V1142M879 1002V1142M1250 1015V1147M1260 1015V1147M1270 1015V1147M1585 1080V1190M1595 1080V1190M1605 1080V1190M1860 1020V1148M1870 1020V1148M1880 1020V1148M2100 1050V1150M2110 1050V1150M2120 1050V1150"/>
+  <path d="M0 1210Q550 1140 1080 1235T2400 1210" stroke="#54DDE7" stroke-opacity=".15"/>
+ </g>
+ <!-- floating glass telemetry, intentionally graphic rather than text UI -->
+ <g transform="translate(190 710) rotate(-4 260 100)"><rect width="450" height="190" rx="18" fill="url(#glass)" stroke="#6EE8F0" stroke-opacity=".31"/><path d="M26 140 84 120 124 134 170 83 220 100 268 48 314 72 380 28 420 45" stroke="#42DCE0" stroke-width="3"/><path d="M26 156 84 136 124 150 170 99 220 116 268 64 314 88 380 44 420 61V166H26Z" fill="#38CBD8" fill-opacity=".10"/><path d="M25 42H425" stroke="#B9F8FF" stroke-opacity=".14"/></g>
+ <g transform="translate(2000 760) rotate(4 150 85)"><rect width="300" height="170" rx="18" fill="url(#glass)" stroke="#AFA0FF" stroke-opacity=".35"/><path d="M24 120 55 102 82 108 112 74 138 84 171 55 201 69 235 30 276 40" stroke="#B4A1FF" stroke-width="3"/><path d="M25 143H275" stroke="#C4D7FF" stroke-opacity=".18"/></g>
+ <g opacity=".75"><circle cx="330" cy="630" r="140" stroke="#37DDE7" stroke-opacity=".09" stroke-width="2"/><circle cx="330" cy="630" r="172" stroke="#37DDE7" stroke-opacity=".06" stroke-width="2"/><circle cx="330" cy="630" r="204" stroke="#9A86FF" stroke-opacity=".07" stroke-width="2"/></g>
+ <rect width="2400" height="1500" fill="#020714" fill-opacity=".19"/>
+</svg>

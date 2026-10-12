@@ -1,0 +1,61 @@
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD:?Set SA_PASSWORD in .env}
+    ports:
+      - "1434:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q \"SELECT 1\" >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: src/Fraud.Api/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__FraudDb: Server=sqlserver,1433;Database=FraudRisk;User Id=sa;Password=${SA_PASSWORD};Encrypt=True;TrustServerCertificate=True
+      Jwt__Issuer: FraudRiskPlatform
+      Jwt__Audience: FraudRiskDashboard
+      Jwt__Key: ${JWT_KEY:?Set JWT_KEY in .env}
+      Admin__Email: ${ADMIN_EMAIL:?Set ADMIN_EMAIL in .env}
+      Admin__Password: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD in .env}
+      Admin__ResetPasswordOnStartup: ${ADMIN_RESET_PASSWORD_ON_STARTUP:-false}
+      ML__DatasetPath: /app/data/raw/creditcard.csv
+      ML__ModelsDirectory: /app/artifacts/models
+      ML__RetrainIntervalHours: ${RETRAIN_INTERVAL_HOURS:-24}
+      Cors__AllowedOrigins__0: http://localhost:5173
+      Cors__AllowedOrigins__1: http://localhost:3000
+      Cors__AllowedOrigins__2: http://localhost:3001
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./data:/app/data:ro
+      - ./artifacts:/app/artifacts
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    ports:
+      - "3001:80"
+    depends_on:
+      api:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  sqlserver-data:
