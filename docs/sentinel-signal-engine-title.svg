@@ -1,22 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="t d">
-<title id="t">Sentinel | Risk Signal Engine</title><desc id="d">An animated orbital signal map with a distinctive Sentinel wordmark.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+<title id="title"># SENTINEL FRAUD INTELLIGENCE</title>
+<desc id="desc">Centered animated Sentinel Fraud Intelligence title with a shifting mint-to-violet glow and pulsing signal rings.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#081521"/><stop offset="1" stop-color="#101b30"/></linearGradient>
- <linearGradient id="type" x1="0" x2="1"><stop stop-color="#b6ffe9"/><stop offset=".48" stop-color="#6de3dd"/><stop offset="1" stop-color="#c8c2ff"/></linearGradient>
- <radialGradient id="halo"><stop stop-color="#1a756f" stop-opacity=".45"/><stop offset="1" stop-color="#1a756f" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#07131f"/>
+    <stop offset="1" stop-color="#111b30"/>
+  </linearGradient>
+  <linearGradient id="type" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#c4ffed">
+      <animate attributeName="stop-color" values="#c4ffed;#7ae8e0;#d1c6ff;#c4ffed" dur="7s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset=".52" stop-color="#6de3dd">
+      <animate attributeName="stop-color" values="#6de3dd;#b9ffec;#9a9cff;#6de3dd" dur="7s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="1" stop-color="#d0c8ff">
+      <animate attributeName="stop-color" values="#d0c8ff;#8be7e7;#b6ffe9;#d0c8ff" dur="7s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+  <radialGradient id="halo">
+    <stop stop-color="#1c877f" stop-opacity=".3"/>
+    <stop offset="1" stop-color="#1c877f" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softGlow" x="-20%" y="-80%" width="140%" height="260%">
+    <feGaussianBlur stdDeviation="5"/>
+  </filter>
 </defs>
-<rect width="1200" height="220" rx="22" fill="url(#bg)"/><circle cx="980" cy="108" r="210" fill="url(#halo)"/>
-<g stroke="#294454" stroke-width="1" fill="none" opacity=".8">
- <ellipse cx="980" cy="108" rx="170" ry="54" transform="rotate(-32 980 108)"/><ellipse cx="980" cy="108" rx="170" ry="54" transform="rotate(32 980 108)"/><circle cx="980" cy="108" r="83"/><circle cx="980" cy="108" r="126"/>
+<rect width="1200" height="220" rx="22" fill="url(#bg)"/>
+<ellipse cx="600" cy="104" rx="490" ry="155" fill="url(#halo)"/>
+<g fill="none" stroke="#31515d" stroke-width="1" opacity=".42">
+  <ellipse cx="600" cy="108" rx="475" ry="77"/>
+  <ellipse cx="600" cy="108" rx="405" ry="59" transform="rotate(-5 600 108)"/>
+  <path d="M48 42H1152M48 178H1152" stroke-dasharray="2 10"/>
 </g>
-<g transform="translate(980 108)">
- <circle r="7" fill="#a8ffed"><animate attributeName="r" values="5;10;5" dur="2.4s" repeatCount="indefinite"/></circle>
- <circle r="30" fill="none" stroke="#72e9d8" stroke-opacity=".7"><animate attributeName="r" values="18;38;18" dur="3.5s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".8;.08;.8" dur="3.5s" repeatCount="indefinite"/></circle>
- <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/><circle cx="126" cy="0" r="5" fill="#c8c2ff"/><circle cx="-126" cy="0" r="3" fill="#6de3dd"/></g>
+<g fill="#72e9d8">
+  <circle cx="96" cy="108" r="3"><animate attributeName="opacity" values=".3;1;.3" dur="2.8s" repeatCount="indefinite"/></circle>
+  <circle cx="1104" cy="108" r="3"><animate attributeName="opacity" values="1;.25;1" dur="3.2s" repeatCount="indefinite"/></circle>
+  <circle cx="180" cy="58" r="2"><animate attributeName="r" values="2;4;2" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="1020" cy="158" r="2"><animate attributeName="r" values="2;4;2" dur="2.5s" repeatCount="indefinite"/></circle>
 </g>
-<path d="M55 47V173" stroke="#6de3dd" stroke-width="3"/><path d="M66 47V173" stroke="#6de3dd" stroke-opacity=".22" stroke-width="1"/>
-<text x="88" y="100" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="5" fill="url(#type)">SENTINEL</text>
-<text x="91" y="135" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" letter-spacing="6" fill="#edf7fb">RISK SIGNAL ENGINE</text>
-<text x="92" y="164" font-family="ui-monospace,Consolas,monospace" font-size="12" letter-spacing="2" fill="#8daaba">SCORE  /  REVIEW  /  EVALUATE  /  OBSERVE</text>
-<path d="M90 184H680" stroke="#6de3dd" stroke-width="1" stroke-dasharray="590" stroke-dashoffset="590"><animate attributeName="stroke-dashoffset" values="590;0;590" dur="6s" repeatCount="indefinite"/></path>
+<g transform="translate(600 108)" fill="none" stroke="#6de3dd">
+  <circle r="67" stroke-opacity=".2">
+    <animate attributeName="r" values="60;73;60" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".12;.36;.12" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="88" stroke-opacity=".13" stroke-dasharray="3 12">
+    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="36s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<text x="600" y="112" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="850" letter-spacing="2.1" fill="#6de3dd" opacity=".3" filter="url(#softGlow)"># SENTINEL FRAUD INTELLIGENCE</text>
+<text x="600" y="112" text-anchor="middle" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="850" letter-spacing="2.1" fill="url(#type)">
+  # SENTINEL FRAUD INTELLIGENCE
+  <animate attributeName="opacity" values=".94;1;.94" dur="4.5s" repeatCount="indefinite"/>
+</text>
+<path d="M190 151H1010" stroke="#254951" stroke-width="2"/>
+<path d="M190 151H1010" stroke="#6de3dd" stroke-width="2" stroke-linecap="round" stroke-dasharray="100 720" stroke-dashoffset="820">
+  <animate attributeName="stroke-dashoffset" values="820;0;-820" dur="5s" repeatCount="indefinite"/>
+</path>
 </svg>
